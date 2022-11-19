@@ -1,0 +1,154 @@
+/* jost-regular - latin */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/jost-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/jost-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jost-700 - latin */
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../fonts/jost-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/jost-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.body{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    background: url(../img/Background.png) no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.containerr{
+    max-width: 1700px;
+    margin: 0 auto;
+    border: 1px solid green;
+}
+.taqvim__main-title{
+    margin: 0;
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+.taqvim__main-title::after{
+    content: "";
+    display: block;
+    width: 1000px;
+    height: 3px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.region-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 340px;
+    margin-bottom: 67px;
+}
+.region-title{
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 20px;
+    line-height: 29px;
+}
+.pray-time__title{
+    margin: 0;
+}
+.pray-time__data-text{
+    position: relative;
+}
+.pray-time__title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 35px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+.pray-time__data-text::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/celendar.svg) no-repeat center center;
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+.region-year-span{
+    color: #FFC700;
+}
+.region-span{
+    color: #FFC700;
+}
+.pray-list{
+    list-style: none;
+    margin-top: 80px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.pray-item{
+    min-width: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #000000;
+    border-radius: 25px;
+    position: relative;
+    min-height: 250px;
+    box-shadow: 0px 10px 100px 10px rgba(255, 255, 255, 0.2);
+    filter: blur(0.2px);
+    margin-right: 40px;
+}
+.pray-item:last-child{
+    margin-right: 0;
+}
+.pray-item::after{
+    content: '';
+    display: block;
+    width: 240px;
+    height: 223px;
+    position: absolute;
+    background: url(../img/tong-img.svg) no-repeat center center;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pray-item--quyosh::after{
+    background: url(../img/quyosh-img.svg) no-repeat center center;
+}
+.pray-item--peshin::after{
+    background: url(../img/peshin-img.svg) no-repeat center center;
+}
+.pray-item--asr::after{
+    background: url(../img/asr-img.svg) no-repeat center center;
+}
+.pray-item--shom::after{
+    background: url(../img/shom.svg) no-repeat center center;
+}
+.pray-item--xufton::after{
+    background: url(../img/xufton.svg) no-repeat center center;
+}
+.pray-item__title{
+    color: #FFC700;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 244px;
+}
+.pray-iten__date{
+    margin: 0;
+    font-size: 48px;
+    line-height: 69px;
+}
